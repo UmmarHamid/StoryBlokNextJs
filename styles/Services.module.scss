@@ -45,9 +45,12 @@
 
         &__title {
           font-size: 24px;
+          font-weight: 800;
           line-height: 33px;
+          text-align: center;
         }
         &__image {
+          align-self: center;
         }
         &__description {
           font-size: 18px;

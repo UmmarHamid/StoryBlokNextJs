@@ -13,11 +13,11 @@ export default function Home({ story, preview, Sdata }) {
   // add stoies to state
   const [storyBlokData, setStoryBlokData] = React.useState(stories);
   //use stories
-  {
-    storyBlokData.map(
-      (item) => console.log(item)
-    )
-  }
+  // {
+  //   storyBlokData.map(
+  //     (item) => console.log(item)
+  //   )
+  // }
   return (
     <div >
       <Head>

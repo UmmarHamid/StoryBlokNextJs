@@ -21,10 +21,17 @@ const Services = ({ stories }) => {
                     <div className={styles.group__services__row}>
 
                         {services.map((service) => {
+                            console.log(service)
 
                             return (
-                                <div className={styles.group__services__row__service}>
-                                    <div className={styles.group__services__row__service__image}>Image</div>
+                                <div className={styles.group__services__row__service} key={service.id}>
+                                    <div className={styles.group__services__row__service__image} style={{
+                                        backgroundImage: `url(${service.content.Image.filename})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundSize: 'cover',
+                                        width: '80px',
+                                        height: '80px'
+                                    }}></div>
                                     <div className={styles.group__services__row__service__title}>{service.content.Title}</div>
                                     <div className={styles.group__services__row__service__description}>{service.content.Text}</div>
                                 </div>

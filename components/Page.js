@@ -1,7 +1,8 @@
 import DynamicHeroComponent from "./DynamicHeroComponent";
 import SbEditable from "storyblok-react";
 import Hero from "./Hero";
-const Page = ({ content }) => (
+import Services from "./Services"
+const Page = ({ content, stories }) => (
     <>
         <Hero>
             <SbEditable content={content}>
@@ -12,6 +13,7 @@ const Page = ({ content }) => (
                 </div>
             </SbEditable>
         </Hero>
+        <Services stories={stories} />
 
     </>
 

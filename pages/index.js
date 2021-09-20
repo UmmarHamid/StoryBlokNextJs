@@ -29,8 +29,7 @@ export default function Home({ story, preview, Sdata }) {
 
       <header>
         <Layout>
-          <Page content={story.content} />
-
+          <Page content={story.content} stories={storyBlokData} />
         </Layout>
 
       </header>

@@ -10,7 +10,7 @@ export default function Home({ story, preview, Sdata }) {
   story = useStoryblok(story, preview)
   //set all stories
   const stories = Sdata.data.stories
-  // add stoies to state
+  // add stories to state
   const [storyBlokData, setStoryBlokData] = React.useState(stories);
   //use stories
   // {
@@ -25,6 +25,7 @@ export default function Home({ story, preview, Sdata }) {
         <link rel="icon" href="/favicon.ico" />
         <script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge">
         </script>
+
       </Head>
 
       <header>

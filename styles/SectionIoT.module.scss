@@ -1,0 +1,51 @@
+.sectionIot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #f84646;
+  background-image: url(../assets/image1.png);
+  //   mix-blend-mode: lighten;
+  background-blend-mode: lighten;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    &__title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 64px;
+      margin: 8px 0px;
+    }
+    &__text {
+      text-align: center;
+      font-size: 18px;
+      line-height: 32px;
+      margin: 8px 0px;
+    }
+  }
+  &__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 70px 0px;
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-basis: 25%;
+      align-items: center;
+      &__text {
+        width: 50%;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 31px;
+        padding-right: 10px;
+      }
+      &__icon {
+      }
+    }
+  }
+}

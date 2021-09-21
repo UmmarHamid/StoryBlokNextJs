@@ -1,0 +1,37 @@
+.footer {
+  padding: 70px 5rem;
+  background-color: #f8464a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  &__group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    &__col {
+      ul {
+        list-style: none;
+        line-height: 24px;
+
+        li {
+          margin-right: 100px;
+          margin-bottom: 24px;
+          color: #e6e6e6;
+        }
+        b {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  &__marks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__copyright {
+      line-height: 32px;
+    }
+    &__socialMediaIcons {
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 160px 0px;
+  &__avatar {
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__button {
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: #f84646;
+    color: #ffffff;
+    font-size: 24px;
+  }
+}

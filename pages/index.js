@@ -57,6 +57,8 @@ export async function getStaticProps(context) {
     version: "draft"
 
   })
+
+
   return {
     props: {
       story: data ? data.story : false,

@@ -15,19 +15,19 @@ const Hero = ({ blok, children }) => {
                 <ul className={styles.hero__navbar__elements}>
 
                     <Link href="/home" >
-                        <a className={styles.hero__navbar__elements__item}>Çözüm ve Hizmetler</a>
+                        <li className={styles.hero__navbar__elements__item}>Çözüm ve Hizmetler</li>
                     </Link>
                     <Link href="/" >
-                        <a className={styles.hero__navbar__elements__item}>Ürünler</a>
+                        <li className={styles.hero__navbar__elements__item}>Ürünler</li>
                     </Link>
                     <Link href="/" >
-                        <a className={styles.hero__navbar__elements__item}>Teknolojiler</a>
+                        <li className={styles.hero__navbar__elements__item}>Teknolojiler</li>
                     </Link>
                     <Link href="/" >
-                        <a className={styles.hero__navbar__elements__item}>İnsan Kaynakları</a>
+                        <li className={styles.hero__navbar__elements__item}>İnsan Kaynakları</li>
                     </Link>
                     <Link href="/" >
-                        <a className={styles.hero__navbar__elements__item}>Kurumsal</a>
+                        <li className={styles.hero__navbar__elements__item}>Kurumsal</li>
                     </Link>
                     <button className={styles.hero__navbar__elements__btn}>İletişim</button>
                 </ul>

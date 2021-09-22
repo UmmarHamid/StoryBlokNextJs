@@ -14,9 +14,13 @@
       justify-content: flex-end;
       align-items: center;
       margin: 45px 142px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
 
       &__item {
         padding-left: 30px;
+        cursor: pointer;
       }
       &__btn {
         cursor: pointer;

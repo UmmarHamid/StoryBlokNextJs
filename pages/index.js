@@ -5,19 +5,18 @@ import Page from '../components/Page'
 // The Storyblok Client and hook
 import Storyblok, { useStoryblok } from "../lib/storyblok"
 import Layout from "../components/Layout"
-export default function Home({ story, preview, Sdata }) {
+export default function Home({ story, preview, Sdata, temp }) {
   //set single story
   story = useStoryblok(story, preview)
+
   //set all stories
   const stories = Sdata.data.stories
+
   // add stories to state
   const [storyBlokData, setStoryBlokData] = React.useState(stories);
-  //use stories
-  // {
-  //   storyBlokData.map(
-  //     (item) => console.log(item)
-  //   )
-  // }
+
+
+  console.log(temp.data.stories)
   return (
     <div >
       <Head>
@@ -57,13 +56,23 @@ export async function getStaticProps(context) {
     version: "draft"
 
   })
+  let temp = await Storyblok.get('cdn/stories/', {
+    version: "draft",
+    // "by_uuids": "9924e25e-4806-4076-9f14-c39c1c9effb7,8734c041-d84e-42a7-8e29-e29c99d61178",
+    starts_with: 'project/components'
+    // by_slugs: 'project/components/hero,project/components/infocard',
+    // excluding_slugs: 'project/components/hero'
+
+  })
+
 
 
   return {
     props: {
       story: data ? data.story : false,
       preview: context.preview || false,
-      Sdata
+      Sdata,
+      temp
     },
     revalidate: 3600, // revalidate every hour
   }

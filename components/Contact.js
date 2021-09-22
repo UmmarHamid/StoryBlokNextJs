@@ -6,7 +6,7 @@ const Contact = ({ stories }) => {
     const contactcard = stories.filter((story) =>
         story.slug == "contact-1"
     )
-    console.log(contactcard)
+    // console.log(contactcard)
     return (
         <div className={styles.contact}>
             <div className={styles.contact__avatar}>

@@ -2,7 +2,7 @@ import styles from "../styles/Footer.module.scss"
 import React from 'react'
 import { RiFacebookCircleLine, RiTwitterLine, RiLinkedinBoxLine, RiInstagramLine } from "react-icons/ri";
 
-const Footer = ({ stories }) => {
+const Footer = ({ blok }) => {
     return (
         <div className={styles.footer}>
             <div className={styles.footer__group}>
